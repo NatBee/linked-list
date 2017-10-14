@@ -1,4 +1,4 @@
-* {
+  * {
   font-family: Open Sans;
 }
 *,
@@ -12,8 +12,16 @@ body {
   margin: 0;
 }
 
-div {
-  display: relative;
+
+h1{
+  width: 600px;
+  text-align: center;
+  margin: 200px 8px 0px 0px;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 80px;
+  display: inline-block;
+  
 }
 
 .body-submission {
@@ -25,21 +33,66 @@ div {
   width: 50%;
 }
 
-.body-submission h1 {
-  font-weight: 800;
-  font-size: 48px;
-  height: 48px;
-  width: 84px;
-}
-
-span {
-  margin: auto 0;  
-}
-
 #logo {
-  height: 48px;
-  width: 84px;
+  display: inline-block;
+  height: 79px;
+  width: 112px;
+  margin: -8px 7px;
 }
+
+.enter-button {
+  display: inline-block;
+  text-align: center;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 12px;
+  width: 406px;
+  height: 38px;
+}
+
+.enter-button:disabled {
+  display: inline-block;
+  text-align: center;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  width: 604px;
+  height: 38px;
+  border: none; 
+}
+
+.enter-button:hover{
+  background-color: #FFD773;
+}
+
+#website-title{
+  margin: 38px 36px;
+  padding-right: 10px;
+  height: 38px;
+  width: 600px;
+  text-align: left;
+  letter-spacing: 0.5;
+  font-size: 27px;
+  font-weight: 400;
+  display: block;
+}
+
+#website-url {
+  margin: 53px 36px;
+  padding-right: 10px;
+  height: 38px;
+  width: 600px;
+  display: block;
+  text-align: left;
+  letter-spacing: 0.5;
+  font-weight: 400;
+  font-size: 27px;
+
+}
+
+
 
 .card-body {
   background-color: #CFD8DC;
