@@ -1,4 +1,4 @@
-* {
+  * {
   font-family: Open Sans;
 }
 *,
@@ -12,8 +12,15 @@ body {
   margin: 0;
 }
 
-div {
-  display: relative;
+
+h1{
+  text-align: center;
+  margin: 200px auto 0px auto;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 48px;
+  display: inline-block;
+  
 }
 
 .body-submission {
@@ -25,21 +32,57 @@ div {
   width: 50%;
 }
 
-.body-submission h1 {
-  font-weight: 800;
-  font-size: 48px;
-  height: 48px;
-  width: 84px;
-}
-
-span {
-  margin: auto 0;  
-}
-
 #logo {
+  display: inline-block;
   height: 48px;
   width: 84px;
 }
+
+.enter-button {
+  display: inline-block;
+  text-align: center;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 12px;
+  width: 406px;
+  height: 38px;
+}
+
+.enter-button:disabled {
+  display: inline-block;
+  text-align: center;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-weight: 400;
+  width: 406px;
+  height: 38px; 
+}
+
+.enter-button:hover{
+  background-color: #FFD773;
+}
+
+#website-title{
+ /* height: 38px;
+  width: 406px;*/
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+#website-url {
+  /*height: 38px;
+  width: 406px;*/
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+
+}
+
+
 
 .card-body {
   background-color: #CFD8DC;
