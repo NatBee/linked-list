@@ -14,11 +14,12 @@ body {
 
 
 h1{
+  width: 600px;
   text-align: center;
-  margin: 200px auto 0px auto;
+  margin: 200px 8px 0px 0px;
   color: #FFFFFF;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 80px;
   display: inline-block;
   
 }
@@ -34,8 +35,9 @@ h1{
 
 #logo {
   display: inline-block;
-  height: 48px;
-  width: 84px;
+  height: 79px;
+  width: 112px;
+  margin: -8px 7px;
 }
 
 .enter-button {
@@ -54,9 +56,11 @@ h1{
   text-align: center;
   background-color: #FFC107;
   color: #FFFFFF;
+  font-size: 20px;
   font-weight: 400;
-  width: 406px;
-  height: 38px; 
+  width: 604px;
+  height: 38px;
+  border: none; 
 }
 
 .enter-button:hover{
@@ -64,21 +68,27 @@ h1{
 }
 
 #website-title{
- /* height: 38px;
-  width: 406px;*/
-  text-align: center;
-  font-size: 12px;
+  margin: 38px 36px;
+  padding-right: 10px;
+  height: 38px;
+  width: 600px;
+  text-align: left;
+  letter-spacing: 0.5;
+  font-size: 27px;
   font-weight: 400;
   display: block;
 }
 
 #website-url {
-  /*height: 38px;
-  width: 406px;*/
+  margin: 53px 36px;
+  padding-right: 10px;
+  height: 38px;
+  width: 600px;
   display: block;
-  text-align: center;
+  text-align: left;
+  letter-spacing: 0.5;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 27px;
 
 }
 
