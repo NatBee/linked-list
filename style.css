@@ -1,4 +1,4 @@
-  * {
+* {
   font-family: Open Sans;
 }
 *,
@@ -7,21 +7,18 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
 }
 
-
 h1{
+  color: #FFFFFF;
+  display: block; 
+  font-size: 78px;
+  font-weight: 800;
+  margin: 200px 0px 0px 15px;
   width: 600px;
   text-align: center;
-  margin: 200px 8px 0px 0px;
-  color: #FFFFFF;
-  font-weight: 800;
-  font-size: 80px;
-  display: inline-block;
-  
 }
 
 .body-submission {
@@ -36,31 +33,34 @@ h1{
 #logo {
   display: inline-block;
   height: 79px;
-  width: 112px;
   margin: -8px 7px;
+  width: 118px;
 }
 
 .enter-button {
-  display: inline-block;
-  text-align: center;
   background-color: #FFC107;
+  border: none; 
   color: #FFFFFF;
+  display: block;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 12px;
-  width: 406px;
   height: 38px;
+  margin: 0px 0px 0px 43px;
+  text-align: center;
+  padding: 0px 249px
+  /*width: 550px;*/
 }
 
 .enter-button:disabled {
-  display: inline-block;
-  text-align: center;
-  background-color: #FFC107;
-  color: #FFFFFF;
-  font-size: 20px;
+  /*background-color: #FFC107;*/
+  /*border: none; */
+  /*color: #FFFFFF;*/
+  /*display: inline-block;*/
+ /* font-size: 20px;
   font-weight: 400;
-  width: 604px;
   height: 38px;
-  border: none; 
+  text-align: center;
+  width: 540px;*/
 }
 
 .enter-button:hover{
@@ -68,31 +68,30 @@ h1{
 }
 
 #website-title{
-  margin: 38px 36px;
-  padding-right: 10px;
-  height: 38px;
-  width: 600px;
-  text-align: left;
-  letter-spacing: 0.5;
+  color: #BBBDBF;
+  display: block;
   font-size: 27px;
   font-weight: 400;
-  display: block;
+  height: 38px;
+  letter-spacing: 0.5px;
+  margin: 47px 43px;
+  padding: 0px 238px 0px 9px;
+  text-align: left;
+  /*width: 534px;*/
 }
 
 #website-url {
-  margin: 53px 36px;
-  padding-right: 10px;
-  height: 38px;
-  width: 600px;
+  color: #BBBDBF;
   display: block;
-  text-align: left;
-  letter-spacing: 0.5;
-  font-weight: 400;
+  height: 38px;
   font-size: 27px;
-
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 53px 43px;
+  padding: 0px 238px 0px 9px;
+  text-align: left;
+  /*width: 534px;*/
 }
-
-
 
 .card-body {
   background-color: #CFD8DC;
