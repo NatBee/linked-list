@@ -1,4 +1,4 @@
-  * {
+* {
   font-family: Open Sans;
 }
 *,
@@ -7,25 +7,24 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
 }
 
-
 h1{
+  color: #FFFFFF;
+  display: block; 
+  font-size: 78px;
+  font-weight: 800;
+  margin: 200px 0px 0px 15px;
   width: 600px;
   text-align: center;
-  margin: 200px 8px 0px 0px;
-  color: #FFFFFF;
-  font-weight: 800;
-  font-size: 80px;
-  display: inline-block;
-  
 }
 
 .body-submission {
   background-color: #455A64;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;  
   height: 100%;
   position: absolute;
@@ -36,31 +35,21 @@ h1{
 #logo {
   display: inline-block;
   height: 79px;
-  width: 112px;
   margin: -8px 7px;
+  width: 118px;
 }
 
 .enter-button {
-  display: inline-block;
-  text-align: center;
   background-color: #FFC107;
+  border: none; 
   color: #FFFFFF;
-  font-weight: 400;
-  font-size: 12px;
-  width: 406px;
-  height: 38px;
-}
-
-.enter-button:disabled {
-  display: inline-block;
-  text-align: center;
-  background-color: #FFC107;
-  color: #FFFFFF;
+  display: block;
   font-size: 20px;
   font-weight: 400;
-  width: 604px;
   height: 38px;
-  border: none; 
+  margin: 0px 0px 0px 43px;
+  padding: 0px 249px;
+  text-align: center;
 }
 
 .enter-button:hover{
@@ -68,37 +57,115 @@ h1{
 }
 
 #website-title{
-  margin: 38px 36px;
-  padding-right: 10px;
-  height: 38px;
-  width: 600px;
-  text-align: left;
-  letter-spacing: 0.5;
+  color: #BBBDBF;
+  display: block;
   font-size: 27px;
   font-weight: 400;
-  display: block;
+  height: 38px;
+  letter-spacing: 0.5px;
+  margin: 47px 43px;
+  padding: 0px 238px 0px 9px;
+  text-align: left;
 }
 
 #website-url {
-  margin: 53px 36px;
-  padding-right: 10px;
-  height: 38px;
-  width: 600px;
+  color: #BBBDBF;
   display: block;
-  text-align: left;
-  letter-spacing: 0.5;
-  font-weight: 400;
+  height: 38px;
   font-size: 27px;
-
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 53px 43px;
+  padding: 0px 238px 0px 9px;
+  text-align: left;
 }
-
-
 
 .card-body {
   background-color: #CFD8DC;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
   height: 100%;
   position: absolute;
   right: 0;
   width: 50%;
+}
+
+.sample-card {
+  background-color: #FFFFFF;
+  border: #FFFFFF;
+  border-color: #607D8B;
+  border-style: solid;
+  margin: 28px 30px;
+}
+
+.sample-card:focus-within {
+  background-color: #F2F4F4;
+}
+
+.sample-card h1 {
+  border-bottom: solid;
+  border-color: #CFD8DC;
+  color: #455A64;
+  font-size: 25px;
+  margin: 8px 0px 12px 21px;
+  padding: 0px 0px 7px 0px;
+  text-align: left;
+  width: 93%;
+}
+
+#website-link {
+  border-bottom: solid;
+  border-color: #CFD8DC;
+  color: #607D8B;
+  display: block;
+  font-size: 20px;
+  letter-spacing: .3px;
+  margin: 0px 0px 0px 20px;
+  padding: 4px 0px 16px 2px;
+  text-decoration: underline #F2F4F4;
+  text-underline-position: under;
+  width: 93%;
+} 
+
+#website-link:visited {
+  text-decoration: underline #CFD8DC;
+  text-underline-position: under;
+}
+
+#website-link:hover {
+  color: #455A64;
+  font-weight: 800;
+  text-decoration: underline #FFC107;
+  text-underline-position: under;
+}
+
+.sample-card button {
+  background-color: #FFFFFF;
+  border: none;
+  color: #455A64;
+  font-size: 18px;
+  letter-spacing: .3px;
+  text-decoration: underline #F2F4F4;
+  text-underline-position: under;
+}
+
+.sample-card button:hover {
+  font-weight: 800;
+  text-decoration: underline #FFC107;
+  text-underline-position: under;
+}
+
+#read-button:focus {
+  color: #F05A28;
+  font-weight: 800;
+}
+
+#read-button {
+  padding: 8px 0px 7px 21px;
+}
+
+#remove-button {
+  float: right;
+  padding: 8px 21px 7px 0px;
 }
