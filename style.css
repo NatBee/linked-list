@@ -139,17 +139,17 @@ h1{
   width: 93%;
 } 
 
+#website-link:visited {
+  text-decoration: underline #CFD8DC;
+  text-underline-position: under;
+}
+
 #website-link:hover {
   color: #455A64;
   font-weight: 800;
   text-decoration: underline #FFC107;
   text-underline-position: under;
 }
-
-/*#website-link:visited {
-  text-decoration: underline #CFD8DC;
-  text-underline-position: under;
-}*/
 
 .sample-card button {
   background-color: #FFFFFF;
