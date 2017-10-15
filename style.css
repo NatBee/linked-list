@@ -23,6 +23,8 @@ h1{
 
 .body-submission {
   background-color: #455A64;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;  
   height: 100%;
   position: absolute;
@@ -48,19 +50,6 @@ h1{
   margin: 0px 0px 0px 43px;
   padding: 0px 249px;
   text-align: center;
-  /*width: 550px;*/
-}
-
-.enter-button:disabled {
-  /*background-color: #FFC107;*/
-  /*border: none; */
-  /*color: #FFFFFF;*/
-  /*display: inline-block;*/
- /* font-size: 20px;
-  font-weight: 400;
-  height: 38px;
-  text-align: center;
-  width: 540px;*/
 }
 
 .enter-button:hover{
@@ -77,7 +66,6 @@ h1{
   margin: 47px 43px;
   padding: 0px 238px 0px 9px;
   text-align: left;
-  /*width: 534px;*/
 }
 
 #website-url {
@@ -90,11 +78,12 @@ h1{
   margin: 53px 43px;
   padding: 0px 238px 0px 9px;
   text-align: left;
-  /*width: 534px;*/
 }
 
 .card-body {
   background-color: #CFD8DC;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
   height: 100%;
   position: absolute;
@@ -173,5 +162,10 @@ h1{
 }
 
 #read-button {
-  margin: 7px 404px 5px 19px;
+  padding: 8px 0px 7px 21px;
+}
+
+#remove-button {
+  float: right;
+  padding: 8px 21px 7px 0px;
 }
