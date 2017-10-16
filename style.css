@@ -97,6 +97,8 @@ h1{
   border-color: #607D8B;
   border-style: solid;
   margin: 28px 30px;
+  /*width: 200px;
+  height: 200px;*/
 }
 
 .sample-card:focus-within {
@@ -165,7 +167,7 @@ h1{
   padding: 8px 0px 7px 21px;
 }
 
-#remove-button {
+#delete-button {
   float: right;
   padding: 8px 21px 7px 0px;
 }
