@@ -116,7 +116,7 @@ h1{
   width: 93%;
 }
 
-#website-link {
+.website-link {
   border-bottom: solid;
   border-color: #CFD8DC;
   color: #607D8B;
@@ -130,12 +130,12 @@ h1{
   width: 93%;
 } 
 
-#website-link:visited {
+.website-link:visited {
   text-decoration: underline #CFD8DC;
   text-underline-position: under;
 }
 
-#website-link:hover {
+.website-link:hover {
   color: #455A64;
   font-weight: 800;
   text-decoration: underline #FFC107;

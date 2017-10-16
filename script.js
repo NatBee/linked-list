@@ -21,14 +21,24 @@ function addCard() {
   // while
   userInputWebsite = userInputWebsite.value;
   userInputUrl = userInputUrl.value;
-  cardBody.prepend('<section class="card-body"><article class="sample-card"><h1>' + userInputWebsite + '</h1><a>' + userInputUrl + '</a><button id="read-button">Read</button>' + '<button id="delete-button>Delete</button></article></section>');
-  console.log ("add card function", userInputWebsite + userInputUrl);
+  var id = $.now();
+  console.log (id)
+  cardBody.append(
+    `<article id="${id}" class="sample-card">
+      <h1>${userInputWebsite}</h1>
+      <a class="website-link">${userInputUrl}</a>
+      <button id="read-button">Read</button>
+      <button id="delete-button" onClick="removeCard(${id})">Delete</button>
+    </article>`);
+    console.log ("add card function", userInputWebsite + userInputUrl);
 }
 
-function removeCard (){
-  deleteButton.addEventListener("click", function(){
-    addcard.remove
-  });
+deleteButton.addEventListener("click", removeCard); 
+
+function removeCard(id) {
+    $('#'+id).remove()
+    console.log(id)
+    
 }
    
 
