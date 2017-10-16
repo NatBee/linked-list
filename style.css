@@ -97,6 +97,8 @@ h1{
   border-color: #607D8B;
   border-style: solid;
   margin: 28px 30px;
+  /*width: 200px;
+  height: 200px;*/
 }
 
 .sample-card:focus-within {
@@ -114,7 +116,7 @@ h1{
   width: 93%;
 }
 
-#website-link {
+.website-link {
   border-bottom: solid;
   border-color: #CFD8DC;
   color: #607D8B;
@@ -128,12 +130,12 @@ h1{
   width: 93%;
 } 
 
-#website-link:visited {
+.website-link:visited {
   text-decoration: underline #CFD8DC;
   text-underline-position: under;
 }
 
-#website-link:hover {
+.website-link:hover {
   color: #455A64;
   font-weight: 800;
   text-decoration: underline #FFC107;
@@ -165,7 +167,7 @@ h1{
   padding: 8px 0px 7px 21px;
 }
 
-#remove-button {
+#delete-button {
   float: right;
   padding: 8px 21px 7px 0px;
 }
