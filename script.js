@@ -16,20 +16,15 @@ function enterButtonEnabled() {
   }
 }
 
- 
 function addCard() {
-  // while
-  userInputWebsite = userInputWebsite.value;
-  userInputUrl = userInputUrl.value;
   var id = $.now();
-  console.log (id)
-  cardBody.append(
-    `<article id="${id}" class="sample-card">
-      <h1>${userInputWebsite}</h1>
-      <a class="website-link">${userInputUrl}</a>
+  console.log (id);
+    $(`<article id="${id}" class="sample-card">
+      <h1>${userInputWebsite.value}</h1>
+      <a class="website-link">${userInputUrl.value}</a>
       <button id="read-button">Read</button>
       <button id="delete-button" onClick="removeCard(${id})">Delete</button>
-    </article>`);
+    </article>`).appendTo(".card-body");
     console.log ("add card function", userInputWebsite + userInputUrl);
 }
 
@@ -37,8 +32,7 @@ deleteButton.addEventListener("click", removeCard);
 
 function removeCard(id) {
     $('#'+id).remove()
-    console.log(id)
-    
+    console.log(id)    
 }
    
 
