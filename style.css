@@ -112,9 +112,9 @@ h1{
   height: 200px;*/
 }
 
-.sample-card:focus-within {
+/*.sample-card:focus-within {
   background-color: #F2F4F4;
-}
+}*/
 
 .sample-card h1 {
   border-bottom: solid;
@@ -141,11 +141,6 @@ h1{
   width: 93%;
 } 
 
-.website-link:visited {
-  text-decoration: underline #CFD8DC;
-  text-underline-position: under;
-}
-
 .website-link:hover {
   color: #455A64;
   font-weight: 800;
@@ -169,11 +164,24 @@ h1{
   text-underline-position: under;
 }
 
-.clicked:focus {
-  color: #F05A28;
-  font-weight: 800;
+.sample-card-read {
+  background-color: #F2F4F4;
 }
 
+.sample-card-read .website-link {
+  text-decoration: underline #CFD8DC;
+  text-underline-position: under;
+}
+
+.sample-card-read .read-button {
+  color: #F05A28;
+  font-weight: 800;  
+}
+
+.read {
+  background-color: #F05A28;
+}
+  
 .read-button {
   padding: 8px 0px 7px 21px;
 }
