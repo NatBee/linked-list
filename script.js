@@ -7,17 +7,31 @@ var cardBody = $(".card-body");
 
 userInputUrl.addEventListener("keyup", enterButtonEnabled);
 userInputWebsite.addEventListener("keyup", enterButtonEnabled);
-enterButton.addEventListener("click", addCard);
+enterButton.addEventListener("click", inputValidation);
+
+function inputValidation() {
+  var userUrl = userInputUrl.value;
+  var userWeb = userInputWebsite.value;
+  
+  if(userUrl===('') && userWeb!==('')) {
+    alert('Errror! Please fill in both website title and URL.')    
+  }
+  else if(userUrl!==('') && userWeb===('')) {
+    alert('Errror! Please fill in both website title and URL.')    
+  }
+  else {
+    addCard();  
+  }
+}
+
 $('.card-body').on('click', '.read-button', toggleRead);
 $('.card-body').on('click', '.deleteButton', removeCard);  
- 
 
-
-// function enterButtonEnabled() {
-//   if (enterButton.disabled =true) {
-//     enterButton.removeAttribute("disabled", false);
-//   }
-// }
+function enterButtonEnabled() {
+  if (enterButton.disabled =true) {
+    enterButton.removeAttribute("disabled", false);
+  } 
+}
 
 function addCard() {
   var id = $.now();
