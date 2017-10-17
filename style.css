@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 632px){
+@media screen and (max-width: 12px){
   .body-submission {
     width: 100%;
   }
@@ -169,12 +169,12 @@ h1{
   text-underline-position: under;
 }
 
-#read-button:focus {
+.clicked:focus {
   color: #F05A28;
   font-weight: 800;
 }
 
-#read-button {
+.read-button {
   padding: 8px 0px 7px 21px;
 }
 
@@ -182,3 +182,5 @@ h1{
   float: right;
   padding: 8px 21px 7px 0px;
 }
+
+
