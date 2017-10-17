@@ -16,20 +16,15 @@ function enterButtonEnabled() {
   }
 }
 
- 
 function addCard() {
-  // while
-  userInputWebsite = userInputWebsite.value;
-  userInputUrl = userInputUrl.value;
   var id = $.now();
-  console.log (id)
-  cardBody.append(
-    `<article id="${id}" class="sample-card">
-      <h1>${userInputWebsite}</h1>
-      <a class="website-link">${userInputUrl}</a>
-      <button id="read-button">Read</button>
+  console.log (id);
+    $(`<article id="${id}" class="sample-card">
+      <h1>${userInputWebsite.value}</h1>
+      <a class="website-link">${userInputUrl.value}</a>
+      <button id="${id}" class="read-button">Read</button>
       <button id="delete-button" onClick="removeCard(${id})">Delete</button>
-    </article>`);
+    </article>`).appendTo(".card-body");
     console.log ("add card function", userInputWebsite + userInputUrl);
 }
 
@@ -37,9 +32,40 @@ deleteButton.addEventListener("click", removeCard);
 
 function removeCard(id) {
     $('#'+id).remove()
-    console.log(id)
-    
-}
+    }
+
+function addRemoveRead(id) {
+  $('#'+id).hover()
+$('read-button').hover(
+       function(){ $(this).addClass('hover') },
+       function(){ $(this).removeClass('hover') },
+)}
+
+// $("read-button").click(function() {
+//   $(this).toggleClass(".clicked")
+// })
+
+// readButton.addEventListener("click", addReadClass);
+
+// function addReadClass(id) {
+//   $('#'+id);
+// $("read-button").click(function() {
+//   $(this).toggleClass(".clicked:focus");
+// });
+// }
+
+// $('#'+id).on('click', function () {
+//   $(this).toggleClass('clicked');
+// });
+
+
+// function addReadClass(id) {
+//   $('#'+id).prop
+// }
+
+// function toggleColor() {
+//   $("read-button").classlist(#F05A28);
+// }
    
 
 
