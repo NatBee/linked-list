@@ -152,13 +152,10 @@ h1{
   text-underline-position: under;
 }
 
-.sample-card-read .read-button {
-  color: #F05A28;
-  font-weight: 800;  
-}
 
-.read {
-  background-color: #F05A28;
+.sample-card-read .read-click {
+  color: #F05A28;
+  font-weight: 800;
 }
 
 #delete-button {
