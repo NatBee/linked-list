@@ -42,32 +42,28 @@ function addCard() {
   $(`<article id="${id}" class="sample-card">
       <h1>${userInputWebsite.value}</h1>
       <a class="website-link">${userInputUrl.value}</a>
-      <button id="${id}" class="read-button ">Read</button>
+      <button id="${id}" class="read-button">Read</button>
       <button id="delete-button" onClick="removeCard(${id})">Delete</button>
     </article>`).appendTo(".card-body");
-
   cardCounter ++;
   readCardCounter();
 }
 
 function removeCard(id) {
-  $('#'+id).remove()
-
+  $('#'+id).remove();
   cardCounter --;
   readCardCounter();
 }
 
-function toggleRead() { 
-  $(this).closest('article').toggleClass('sample-card-read') 
-  readCounter ++; 
+function toggleRead(id) { 
+  $(this).closest('article').toggleClass('sample-card-read');
+  $(this).toggleClass('read-click');
+  readCounter = $('.read-click').length;
   readCardCounter();
 }
 
 function readCardCounter() {
-  cardCounter = cardCounter;
-  readCounter = readCounter;
   var unreadCounter = cardCounter - readCounter;
-
   cardCountValue.innerText = cardCounter;
   readCardCountValue.innerText = readCounter;
   unreadCardCountValue.innerText = unreadCounter;
