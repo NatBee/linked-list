@@ -6,7 +6,6 @@ var deleteButton = document.querySelector("#delete-button");
 var cardCounter = 0;
 var readCounter = 0;
 
-
 userInputUrl.addEventListener("keyup", enterButtonEnabled);
 userInputWebsite.addEventListener("keyup", enterButtonEnabled);
 enterButton.addEventListener("click", inputValidation);
