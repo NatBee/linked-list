@@ -2,8 +2,9 @@ var userInputWebsite = document.querySelector("#website-title");
 var userInputUrl = document.querySelector("#website-url");
 var enterButton = document.querySelector(".enter-button");
 var cardBody = $(".card-body");
-  var deleteButton = document.querySelector("#delete-button");
-
+var deleteButton = document.querySelector("#delete-button");
+var cardCounter = 0;
+var readCounter = 0;
 
 userInputUrl.addEventListener("keyup", enterButtonEnabled);
 userInputWebsite.addEventListener("keyup", enterButtonEnabled);
@@ -43,6 +44,8 @@ function addCard() {
       <button id="delete-button" onClick="removeCard(${id})">Delete</button>
     </article>`).appendTo(".card-body");
 
+  cardCounter ++;
+  console.log(cardCounter);
     console.log ("add card function", userInputWebsite + userInputUrl);
 }
 
@@ -53,7 +56,12 @@ function removeCard(id) {
 function toggleRead() { 
 $(this).closest('article').toggleClass('sample-card-read') 
 console.log ('.sample-card')
-
+readCounter ++;
+cardCounter = cardCounter;
+var unreadCounter = cardCounter - readCounter;
+console.log(cardCounter);
+console.log(readCounter);
+console.log(unreadCounter);
 }
 
 function cardInputReset() {
