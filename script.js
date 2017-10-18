@@ -3,14 +3,37 @@ var userInputUrl = document.querySelector("#website-url");
 var enterButton = document.querySelector(".enter-button");
 var cardBody = $(".card-body");
 var deleteButton = document.querySelector("#delete-button");
+var cardCounter = 0;
+var readCounter = 0;
 
 
 userInputUrl.addEventListener("keyup", enterButtonEnabled);
 userInputWebsite.addEventListener("keyup", enterButtonEnabled);
-enterButton.addEventListener("click", addCard);
+enterButton.addEventListener("click", inputValidation);
+
+function inputValidation() {
+  var userUrl = userInputUrl.value;
+  var userWeb = userInputWebsite.value;
+  
+  if(userUrl===('') && userWeb!==('')) {
+    alert('Errror! Please fill in both website title and URL.')    
+  }
+  else if(userUrl!==('') && userWeb===('')) {
+    alert('Errror! Please fill in both website title and URL.')    
+  }
+  else {
+    addCard();  
+  }
+}
+
 $('.card-body').on('click', '.read-button', toggleRead);
 $('.card-body').on('click', '.deleteButton', removeCard);  
- 
+
+function enterButtonEnabled() {
+  if (enterButton.disabled =true) {
+    enterButton.removeAttribute("disabled", false);
+  } 
+}
 
 function addCard() {
   var id = $.now();
@@ -22,6 +45,8 @@ function addCard() {
       <button id="delete-button" onClick="removeCard(${id})">Delete</button>
     </article>`).appendTo(".card-body");
 
+  cardCounter ++;
+  console.log(cardCounter);
     console.log ("add card function", userInputWebsite + userInputUrl);
 }
 
@@ -32,7 +57,12 @@ function removeCard(id) {
 function toggleRead() { 
 $(this).closest('article').toggleClass('sample-card-read') 
 console.log ('.sample-card')
-
+readCounter ++;
+cardCounter = cardCounter;
+var unreadCounter = cardCounter - readCounter;
+console.log(cardCounter);
+console.log(readCounter);
+console.log(unreadCounter);
 }
 
 function cardInputReset() {
