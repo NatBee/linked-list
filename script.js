@@ -3,6 +3,9 @@ var userInputUrl = document.querySelector("#website-url");
 var enterButton = document.querySelector(".enter-button");
 var cardBody = $(".card-body");
 var deleteButton = document.querySelector("#delete-button");
+var cardCountValue = document.querySelector('.card-count');
+var readCardCountValue = document.querySelector('.read-card-count');
+var unreadCardCountValue = document.querySelector('.unread-card-count');
 var cardCounter = 0;
 var readCounter = 0;
 
@@ -26,8 +29,8 @@ function inputValidation() {
   }
 }
 
-$('.card-body').on('click', '.read-button', toggleRead);
-$('.card-body').on('click', '.deleteButton', removeCard);  
+  $('.card-body').on('click', '.read-button', toggleRead);
+  $('.card-body').on('click', '.deleteButton', removeCard);  
 
 function enterButtonEnabled() {
   if (enterButton.disabled =true) {
@@ -37,8 +40,7 @@ function enterButtonEnabled() {
 
 function addCard() {
   var id = $.now();
-  console.log (id);
-    $(`<article id="${id}" class="sample-card">
+  $(`<article id="${id}" class="sample-card">
       <h1>${userInputWebsite.value}</h1>
       <a class="website-link">${userInputUrl.value}</a>
       <button id="${id}" class="read-button ">Read</button>
@@ -46,23 +48,30 @@ function addCard() {
     </article>`).appendTo(".card-body");
 
   cardCounter ++;
-  console.log(cardCounter);
-    console.log ("add card function", userInputWebsite + userInputUrl);
+  readCardCounter();
 }
 
 function removeCard(id) {
-    $('#'+id).remove()
-    }
+  $('#'+id).remove()
+
+  cardCounter --;
+  readCardCounter();
+}
 
 function toggleRead() { 
-$(this).closest('article').toggleClass('sample-card-read') 
-console.log ('.sample-card')
-readCounter ++;
-cardCounter = cardCounter;
-var unreadCounter = cardCounter - readCounter;
-console.log(cardCounter);
-console.log(readCounter);
-console.log(unreadCounter);
+  $(this).closest('article').toggleClass('sample-card-read') 
+  readCounter ++; 
+  readCardCounter();
+}
+
+function readCardCounter() {
+  cardCounter = cardCounter;
+  readCounter = readCounter;
+  var unreadCounter = cardCounter - readCounter;
+
+  cardCountValue.innerText = cardCounter;
+  readCardCountValue.innerText = readCounter;
+  unreadCardCountValue.innerText = unreadCounter;
 }
 
 function cardInputReset() {
@@ -71,14 +80,3 @@ function cardInputReset() {
   $('userInputWebsite').focus();
   enterButton.disabled = true;
 }
-
-
-   
-
-
-
-
-
-
-
-
