@@ -4,11 +4,9 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800"  rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Document</title>
 </head>
 <body>
-  <!-- <div> -->
     <section class="body-submission">
       <h1>Linked<img src="images/linked-list-logo.svg" alt="Linked list logo" id="logo">List</h1>
       <label for="website-title"></label>
@@ -16,19 +14,13 @@
       <label for="website-url"></label>
       <input id="website-url" type="text" placeholder="Website URL" name="url" required="true"></input>
       <button class="enter-button"  alt="submit-website" disabled> Enter</button>
-      <h2>Number of Cards:<p class="card-count">#</p></h2>
-      <h2>Number of Read Cards:<p class="read-card-count">#</p></h2>
-      <h2>Number of Unread Cards:<p class="unread-card-count">#</p></h2>
+      <div class="counter-display">
+        <h2 class='counter-text'>Total Cards:<p class="card-count">#</p></h2>
+        <h2 class='counter-text'>Read Cards:<p class="read-card-count">#</p></h2>
+        <h2 class='counter-text'>Unread Cards:<p class="unread-card-count">#</p></h2>
+      </div>
     </section>
-    <section class="card-body">
-      <!-- <article class="sample-card">
-      <h1>The Website Title</h1>
-      <a href="http://www.google.com" class="website-link">www.google.com</a>
-      <button id="read-button" alt="read button">Read</button>
-      <button id="delete-button" alt="remove button">Delete</button>
-      </article> -->
-    </section>
-  <!-- </div> -->
+    <section class="card-body"></section>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="jquery-3.2.1.min.js"><\/script>')</script>
   <script type="text/javascript" src="script.js"></script>
