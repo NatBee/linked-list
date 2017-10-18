@@ -2,7 +2,7 @@ var userInputWebsite = document.querySelector("#website-title");
 var userInputUrl = document.querySelector("#website-url");
 var enterButton = document.querySelector(".enter-button");
 var cardBody = $(".card-body");
-  var deleteButton = document.querySelector("#delete-button");
+var deleteButton = document.querySelector("#delete-button");
 
 
 userInputUrl.addEventListener("keyup", enterButtonEnabled);
@@ -11,13 +11,6 @@ enterButton.addEventListener("click", addCard);
 $('.card-body').on('click', '.read-button', toggleRead);
 $('.card-body').on('click', '.deleteButton', removeCard);  
  
-
-
-// function enterButtonEnabled() {
-//   if (enterButton.disabled =true) {
-//     enterButton.removeAttribute("disabled", false);
-//   }
-// }
 
 function addCard() {
   var id = $.now();
