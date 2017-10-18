@@ -3,12 +3,8 @@ var userInputUrl = document.querySelector("#website-url");
 var enterButton = document.querySelector(".enter-button");
 var cardBody = $(".card-body");
 var deleteButton = document.querySelector("#delete-button");
-<<<<<<< HEAD
-
-=======
 var cardCounter = 0;
 var readCounter = 0;
->>>>>>> 7a923cba6b782a5b10eeba1a6f1a0aeb8fab141b
 
 userInputUrl.addEventListener("keyup", enterButtonEnabled);
 userInputWebsite.addEventListener("keyup", enterButtonEnabled);
@@ -32,15 +28,12 @@ function inputValidation() {
 $('.card-body').on('click', '.read-button', toggleRead);
 $('.card-body').on('click', '.deleteButton', removeCard);  
 
-<<<<<<< HEAD
-=======
 function enterButtonEnabled() {
   if (enterButton.disabled =true) {
     enterButton.removeAttribute("disabled", false);
   } 
 }
 
->>>>>>> 7a923cba6b782a5b10eeba1a6f1a0aeb8fab141b
 function addCard() {
   var id = $.now();
   console.log (id);
