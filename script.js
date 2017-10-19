@@ -1,27 +1,27 @@
-var userInputWebsite = document.querySelector("#website-title");
-var userInputUrl = document.querySelector("#website-url");
-var enterButton = document.querySelector(".enter-button");
-var cardBody = $(".card-body");
-var deleteButton = document.querySelector("#delete-button");
+var userInputWebsite = document.querySelector('#website-title');
+var userInputUrl = document.querySelector('#website-url');
+var enterButton = document.querySelector('.enter-button');
+var cardBody = $('.card-body');
+var deleteButton = document.querySelector('#delete-button');
 var cardCountValue = document.querySelector('.card-count');
 var readCardCountValue = document.querySelector('.read-card-count');
 var unreadCardCountValue = document.querySelector('.unread-card-count');
 var cardCounter = 0;
 var readCounter = 0;
 
-userInputUrl.addEventListener("keyup", enterButtonEnabled);
-userInputWebsite.addEventListener("keyup", enterButtonEnabled);
-enterButton.addEventListener("click", inputValidation);
+userInputUrl.addEventListener('keyup', enterButtonEnabled);
+userInputWebsite.addEventListener('keyup', enterButtonEnabled);
+enterButton.addEventListener('click', inputValidation);
 
 function inputValidation() {
   var userUrl = userInputUrl.value;
   var userWeb = userInputWebsite.value;
   
   if(userUrl===('') && userWeb!==('')) {
-    alert('Errror! Please fill in both website title and URL.')    
+    alert('Errror! Please fill in both website title and URL.');    
   }
   else if(userUrl!==('') && userWeb===('')) {
-    alert('Errror! Please fill in both website title and URL.')    
+    alert('Errror! Please fill in both website title and URL.');    
   }
   else {
     addCard();  
@@ -33,18 +33,18 @@ function inputValidation() {
 
 function enterButtonEnabled() {
   if (enterButton.disabled =true) {
-    enterButton.removeAttribute("disabled", false);
+    enterButton.removeAttribute('disabled', false);
   } 
 }
 
 function addCard() {
   var id = $.now();
-  $(`<article id="${id}" class="sample-card">
+  $(`<article id='${id}' class='sample-card'>
       <h1>${userInputWebsite.value}</h1>
-      <a class="website-link">${userInputUrl.value}</a>
-      <button id="${id}" class="read-button">Read</button>
-      <button id="delete-button" onClick="removeCard(${id})">Delete</button>
-    </article>`).appendTo(".card-body");
+      <a class='website-link'>${userInputUrl.value}</a>
+      <button id='${id}' class='read-button'>Read</button>
+      <button id='delete-button' onClick='removeCard(${id})'>Delete</button>
+    </article>`).appendTo('.card-body');
   cardCounter ++;
   readCardCounter();
 }
